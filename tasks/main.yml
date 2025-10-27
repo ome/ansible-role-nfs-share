@@ -4,7 +4,6 @@
 - name: system packages | nfs server
   become: true
   ansible.builtin.dnf:
-    update_cache: true
     name: nfs-utils
     state: present
 
